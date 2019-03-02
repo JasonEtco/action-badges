@@ -16,8 +16,5 @@
   ],
   "env": {
     "GITHUB_TOKEN": "@action-badges-gh-token"
-  },
-  "engines": {
-    "node": "^11.0.0"
   }
 }
