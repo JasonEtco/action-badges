@@ -21,11 +21,10 @@
   "dependencies": {
     "@octokit/request": "^2.4.0",
     "@octokit/rest": "^16.16.3",
-    "badgen": "^2.7.0",
-    "cors": "^2.8.5",
-    "express": "^4.16.4"
+    "badgen": "^2.7.0"
   },
   "devDependencies": {
+    "express": "^4.16.4",
     "jest": "^24.1.0",
     "nock": "^10.0.6",
     "nodemon": "^1.18.10",
