@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/(?<owner>.*)/(?<repo>.*)", "methods": ["GET"], "dest": "/lib/index.html" }
+  ],
+  "builds": [
+    { "src": "./lib/index.js", "use": "@now/node" },
+    { "src": "./lib/index.html", "use": "@now/static" }
+  ]
+}
