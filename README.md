@@ -5,10 +5,10 @@
 ## Usage
 
 ```md
-![badge](<URL COMING SOON>/JasonEtco/example-repo)
+![badge](https://action-badges.now.sh/JasonEtco/example-repo)
 
 # Specify a check suite (the name of a workflow)
-![badge](<URL COMING SOON>/JasonEtco/example-repo?workflow=test-on-push)
+![badge](https://action-badges.now.sh/JasonEtco/example-repo?workflow=test-on-push)
 ```
 
 ## How it works
