@@ -2,10 +2,10 @@
   "private": true,
   "name": "action-badges",
   "description": "A badge service for repository check suites",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./lib/index.js",
-    "dev": "nodemon ./lib/index.js",
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
     "test": "jest --coverage && standard"
   },
   "repository": {
