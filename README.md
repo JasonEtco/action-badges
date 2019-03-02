@@ -1,5 +1,5 @@
 <h3 align="center">Action Badges</h3>
-<p align="center">[WIP] A CI-like badge service for GitHub Actions workflows using repository check suites<p>
+<p align="center">[WIP] A README badge service for GitHub Actions<p>
 <p align="center"><a href="https://codecov.io/gh/JasonEtco/action-badges/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/action-badges" alt="Codecov"></a></p>
 
 ## Usage
