@@ -1,10 +1,17 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/(?<owner>.*)/(?<repo>.*)", "methods": ["GET"], "dest": "/lib/index.html" }
+    {
+      "src": "/(?<owner>.*)/(?<repo>.*)",
+      "headers": {
+        "content-type": "image/svg+xml;charset=utf-8",
+        "cache-control": "public, max-age=60, stale-while-revalidate=604800, stale-if-error=604800, s-maxage=604800"
+      },
+      "methods": ["GET"]
+    }
   ],
   "builds": [
-    { "src": "./lib/index.js", "use": "@now/node" },
-    { "src": "./lib/index.html", "use": "@now/static" }
+    { "src": "./lib/index.html", "use": "@now/static" },
+    { "src": "./lib/index.js", "use": "@now/node" }
   ]
 }
