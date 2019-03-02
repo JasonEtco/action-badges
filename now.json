@@ -13,5 +13,8 @@
   "builds": [
     { "src": "./lib/index.html", "use": "@now/static" },
     { "src": "./lib/index.js", "use": "@now/node" }
-  ]
+  ],
+  "engines": {
+    "node": "^11.0.0"
+  }
 }
