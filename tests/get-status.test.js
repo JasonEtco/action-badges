@@ -15,4 +15,9 @@ describe('getStatus', () => {
     const actual = getStatus([{ conclusion: 'neutral' }])
     expect(actual).toBe('neutral')
   })
+
+  it('returns `unknown` if it gets confused', () => {
+    const actual = getStatus([{ conclusion: 'pizza' }])
+    expect(actual).toBe('unknown')
+  })
 })
