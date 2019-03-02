@@ -1,14 +1,14 @@
 <h3 align="center">Action Badges</h3>
 <p align="center">[WIP] A README badge service for GitHub Actions<p>
-<p align="center"><a href="https://codecov.io/gh/JasonEtco/action-badges/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/action-badges" alt="Codecov"></a></p>
+<p align="center"><img src="https://action-badges.now.sh/JasonEtco/action-badges?workflow=Test my code" /> <a href="https://codecov.io/gh/JasonEtco/action-badges/"><img src="https://badgen.now.sh/codecov/c/github/JasonEtco/action-badges" alt="Codecov"></a></p>
 
 ## Usage
 
 ```md
-![badge](<URL COMING SOON>/JasonEtco/example-repo)
+![badge](https://action-badges.now.sh/JasonEtco/example-repo)
 
 # Specify a check suite (the name of a workflow)
-![badge](<URL COMING SOON>/JasonEtco/example-repo?workflow=test-on-push)
+![badge](https://action-badges.now.sh/JasonEtco/example-repo?workflow=test-on-push)
 ```
 
 ## How it works

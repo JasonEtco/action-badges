@@ -1,25 +1,15 @@
 const request = require('supertest')
 const nock = require('nock')
-const createServer = require('../lib')
+const express = require('express')
+const badgeRoute = require('../lib')
 
 describe('action-badges', () => {
   let app
 
   beforeEach(() => {
-    app = createServer()
+    app = express()
+    app.get('/:owner/:repo', badgeRoute)
     console.error = jest.fn()
-  })
-
-  it('has a test', () => {
-    expect(1 + 1).toBe(2)
-  })
-
-  describe('GET /', () => {
-    it('returns the homepage', async () => {
-      const res = await request(app).get('/')
-      expect(res.status).toBe(200)
-      expect(res.text).toMatchSnapshot()
-    })
   })
 
   describe('/:owner/:repo', () => {
@@ -30,7 +20,7 @@ describe('action-badges', () => {
 
       const res = await request(app).get('/JasonEtco/example')
       expect(res.status).toBe(200)
-      expect(res.body.toString('utf8')).toMatchSnapshot()
+      expect(res.text).toMatchSnapshot()
     })
 
     it('returns an "error" badge on errors', async () => {
@@ -40,7 +30,7 @@ describe('action-badges', () => {
 
       const res = await request(app).get('/JasonEtco/example')
       expect(res.status).toBe(200)
-      expect(res.body.toString('utf8')).toMatchSnapshot()
+      expect(res.text).toMatchSnapshot()
     })
   })
 })

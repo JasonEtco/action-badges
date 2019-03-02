@@ -14,16 +14,11 @@
   <main class="text-center width-full d-flex flex-items-center flex-column flex-justify-center">
     <div class="Box border-gray-light p-3 box-shadow-extra-large text-center markdown-body">
       <h1 class="mb-3">Action Badges</h1>
-      <pre><code>![my badge](PATH/JasonEtco/jasonet.co)</code></pre>
-      <pre><code>![my badge](PATH/JasonEtco/jasonet.co?workflow=test-my-code)</code></pre>
+      <pre><code>![my badge](https://action-badges.now.sh/JasonEtco/action-badges)</code></pre>
+      <pre><code>![my badge](https://action-badges.now.sh/JasonEtco/action-badges?workflow=test-my-code)</code></pre>
     </div>
 
     <p class="note mt-3">Made <a href="https://github.com/JasonEtco/action-badges">on GitHub</a> by <a href="https://jasonet.co">@JasonEtco</a>.</p>
   </main>
-
-  <script>
-    const code = document.querySelectorAll('code')
-    code.forEach(c => c.textContent = c.textContent.replace('PATH', window.location.origin))
-  </script>
 </body>
 </html>
