@@ -23,6 +23,16 @@ describe('action-badges', () => {
       expect(res.text).toMatchSnapshot()
     })
 
+    it('returns an "unknown" badge on private repos that return a 404', async () => {
+      nock('https://api.github.com')
+        .get(/\/repos\/JasonEtco\/example\/commits\/master\/check-suites/)
+        .reply(404)
+
+      const res = await request(app).get('/JasonEtco/example')
+      expect(res.status).toBe(200)
+      expect(res.text).toMatchSnapshot()
+    })
+
     it('returns an "error" badge on errors', async () => {
       nock('https://api.github.com')
         .get(/\/repos\/JasonEtco\/example\/commits\/master\/check-suites/)
