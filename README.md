@@ -4,10 +4,15 @@
 
 ## Usage
 
+Get a status badge for all GitHub Action runs on the `master` branch of a repository:
+
 ```md
 ![badge](https://action-badges.now.sh/JasonEtco/example-repo)
+```
 
-# Specify a check suite (the name of a workflow)
+Specify a workflow with the `workflow` query parameter:
+
+```md
 ![badge](https://action-badges.now.sh/JasonEtco/example-repo?workflow=test-on-push)
 ```
 
