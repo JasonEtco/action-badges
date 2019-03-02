@@ -2,12 +2,17 @@
   "version": 2,
   "routes": [
     {
+      "src": "/",
+      "dest": "/lib/index.html"
+    },
+    {
       "src": "/(?<owner>[^/]+)/(?<repo>[^/]+)",
+      "dest": "/lib/index.js",
+      "methods": ["GET"],
       "headers": {
         "content-type": "image/svg+xml;charset=utf-8",
         "cache-control": "public, max-age=60, stale-while-revalidate=604800, stale-if-error=604800, s-maxage=604800"
-      },
-      "methods": ["GET"]
+      }
     }
   ],
   "builds": [
