@@ -14,6 +14,9 @@
     { "src": "./lib/index.html", "use": "@now/static" },
     { "src": "./lib/index.js", "use": "@now/node" }
   ],
+  "env": {
+    "GITHUB_TOKEN": "@action-badges-gh-token"
+  },
   "engines": {
     "node": "^11.0.0"
   }
