@@ -21,5 +21,6 @@
   ],
   "env": {
     "GITHUB_TOKEN": "@action-badges-gh-token"
-  }
+  },
+  "alias": "action-badges"
 }
