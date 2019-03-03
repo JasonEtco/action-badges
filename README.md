@@ -13,7 +13,7 @@ Get a status badge for all GitHub Action runs on the `master` branch of a reposi
 Specify an action with the `action` query parameter:
 
 ```md
-![badge](https://action-badges.now.sh/JasonEtco/example-repo?action=mpn%20test)
+![badge](https://action-badges.now.sh/JasonEtco/example-repo?action=test)
 ```
 
 **Note:** This service only works for public repositories! It cannot read the status of your private repos.
