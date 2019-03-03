@@ -35,14 +35,14 @@ describe('getCheckSuites', () => {
 
   it('returns an array of check suites with a specific suite', async () => {
     nocked
-      .get(/\/repos\/JasonEtco\/example\/commits\/master\/check-suites\?.*check_suite=my-workflow/)
-      .reply(200, { check_suites: [1, 2] })
+      .get(/\/repos\/JasonEtco\/example\/commits\/master\/check-suites\?.*check_name=my-action/)
+      .reply(200, { check_suites: [1] })
     const checkSuites = await getCheckSuites({
       owner: 'JasonEtco',
       repo: 'example',
-      suite: 'my-workflow'
+      action: 'my-action'
     })
     expect(nocked.isDone()).toBe(true)
-    expect(checkSuites).toEqual([1, 2])
+    expect(checkSuites).toEqual([1])
   })
 })
