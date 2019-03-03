@@ -21,7 +21,6 @@
   "homepage": "https://github.com/JasonEtco/action-badges#readme",
   "dependencies": {
     "@octokit/request": "^2.4.0",
-    "@octokit/rest": "^16.16.3",
     "badgen": "^2.7.0"
   },
   "devDependencies": {
