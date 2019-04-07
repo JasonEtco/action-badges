@@ -18,6 +18,6 @@ describe('getStatus', () => {
 
   it('returns `mixed` if it gets confused', () => {
     const actual = getStatus([{ conclusion: 'pizza' }])
-    expect(actual).toBe('unknown')
+    expect(actual).toBe('1/1 mixed')
   })
 })
