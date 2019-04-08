@@ -22,7 +22,7 @@ describe('getStatus', () => {
   })
 
   // Failing > everything else
-  
+
   it('returns `failing` for tests with success and failed conclusions', () => {
     const actual = getStatus([{ conclusion: 'success' }, { conclusion: 'failed' }])
     expect(actual).toBe('1/2 failing')
@@ -42,5 +42,16 @@ describe('getStatus', () => {
     const actual = getStatus([{ conclusion: 'pizza' }, { conclusion: 'failed' }])
     expect(actual).toBe('1/2 failing')
   })
-  // 
+  
+  // Mixed outcomes
+
+  it('returns `mixed` for tests with success and confused conclusions', () => {
+    const actual = getStatus([{ conclusion: 'success' }, { conclusion: 'pizza' }])
+    expect(actual).toBe('2/2 mixed')
+  })
+
+  it('returns `mixed` for tests with neutral and confused conclusions', () => {
+    const actual = getStatus([{ conclusion: 'neutral' }, { conclusion: 'pizza' }])
+    expect(actual).toBe('2/2 mixed')
+  })
 })
