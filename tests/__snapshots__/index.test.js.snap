@@ -45,22 +45,22 @@ exports[`action-badges /:owner/:repo returns an "unknown" badge on private repos
 `;
 
 exports[`action-badges /:owner/:repo returns some SVG code 1`] = `
-"<svg width=\\"88.6\\" height=\\"20\\" viewBox=\\"0 0 886 200\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+"<svg width=\\"111.5\\" height=\\"20\\" viewBox=\\"0 0 1115 200\\" xmlns=\\"http://www.w3.org/2000/svg\\">
   <linearGradient id=\\"a\\" x2=\\"0\\" y2=\\"100%\\">
     <stop offset=\\"0\\" stop-opacity=\\".1\\" stop-color=\\"#EEE\\"/>
     <stop offset=\\"1\\" stop-opacity=\\".1\\"/>
   </linearGradient>
-  <mask id=\\"m\\"><rect width=\\"886\\" height=\\"200\\" rx=\\"30\\" fill=\\"#FFF\\"/></mask>
+  <mask id=\\"m\\"><rect width=\\"1115\\" height=\\"200\\" rx=\\"30\\" fill=\\"#FFF\\"/></mask>
   <g mask=\\"url(#m)\\">
     <rect width=\\"368\\" height=\\"200\\" fill=\\"#555\\"/>
-    <rect width=\\"518\\" height=\\"200\\" fill=\\"#3C1\\" x=\\"368\\"/>
-    <rect width=\\"886\\" height=\\"200\\" fill=\\"url(#a)\\"/>
+    <rect width=\\"747\\" height=\\"200\\" fill=\\"#08C\\" x=\\"368\\"/>
+    <rect width=\\"1115\\" height=\\"200\\" fill=\\"url(#a)\\"/>
   </g>
   <g fill=\\"#fff\\" text-anchor=\\"start\\" font-family=\\"Verdana,DejaVu Sans,sans-serif\\" font-size=\\"110\\">
     <text x=\\"60\\" y=\\"148\\" textLength=\\"268\\" fill=\\"#000\\" opacity=\\"0.25\\">build</text>
     <text x=\\"50\\" y=\\"138\\" textLength=\\"268\\">build</text>
-    <text x=\\"423\\" y=\\"148\\" textLength=\\"418\\" fill=\\"#000\\" opacity=\\"0.25\\">passing</text>
-    <text x=\\"413\\" y=\\"138\\" textLength=\\"418\\">passing</text>
+    <text x=\\"423\\" y=\\"148\\" textLength=\\"647\\" fill=\\"#000\\" opacity=\\"0.25\\">1/1 passing</text>
+    <text x=\\"413\\" y=\\"138\\" textLength=\\"647\\">1/1 passing</text>
   </g>
   
 </svg>"
